@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.project-section h1 {
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: 700;
+  padding: 40px 0;
+}
+.project-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+  overflow: hidden;
+  margin: 30px 0;
+}
+.project-item img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.project-section-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+/* modal css */
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.2) !important;
+  display: none;
+  padding: 0 50px;
+}
+.show {
+  display: block;
+}
+
+.lightbox-holder {
+  position: relative;
+}
+.lightbox-item {
+  min-height: 85vh;
+  background: url('images/project1.jpg') center/cover fixed no-repeat;
+  border-radius: 0.3rem;
+}
+.lightbox-close {
+  position: relative;
+  top: 0;
+  left: 96%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.btnLeft {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  font-size: 50px;
+  cursor: pointer;
+}
+.btnRight {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  font-size: 50px;
+  cursor: pointer;
+}

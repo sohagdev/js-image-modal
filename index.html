@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Modal</title>
+    <!-- Web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material icons cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div
+      data-tooltype="section"
+      class="custom section-block project-section"
+      id="project-section"
+    >
+      <h1>Our Projects</h1>
+      <div class="project-content">
+        <div
+          class="custom block-image project-section-one"
+          data-tooltype="image"
+        >
+          <div class="project-item">
+            <img
+              src="images/project1.jpg"
+              class="project-img"
+              style="height: 600px;"
+              alt="img"
+            />
+          </div>
+        </div>
+        <div
+          class="custom block-image project-section-two"
+          data-tooltype="image"
+        >
+          <div class="project-item">
+            <img src="images/project2.jpg" class="project-img" alt="img" />
+          </div>
+          <div class="project-item">
+            <img src="images/project3.jpg" class="project-img" alt="img" />
+          </div>
+          <div class="project-item">
+            <img src="images/project4.jpg" class="project-img" alt="img" />
+          </div>
+          <div class="project-item">
+            <img src="images/project5.jpg" class="project-img" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="lightbox-container align-items-center">
+        <div class="lightbox-holder">
+          <span class="lightbox-close material-icons">
+            close
+          </span>
+          <div class="lightbox-item"></div>
+          <span class="lightbox-control btnLeft material-icons">
+            navigate_before
+          </span>
+          <span class="lightbox-control btnRight material-icons">
+            navigate_next
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
